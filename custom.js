@@ -7,6 +7,22 @@ const graphContainer = document.getElementById("graph-container");
     const master = gitgraph.branch("master");
     master.commit("Initial commit");
 
+    master.tag("v1.1.0");
+    master.commit("Initial commit");
+    const FeatureA = gitgraph.branch("Feature A");
+    FeatureA.commit("ADD : feature");
+    FeatureA.commit("ADD : feature2");
+    master.merge(FeatureA);
+
+
+    
+
+
+    
+
+
+
+
     // const develop = gitgraph.branch("develop");
     // develop.commit("Add TypeScript");
 
